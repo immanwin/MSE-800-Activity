@@ -1,44 +1,50 @@
 import random
 import string
 
-
-def get_random_word():
+class Word_Game:
+    def __init__(self,words,secret,blanks,lives,used):
+        self.words = words
+        self.secret = secret
+        self.blanks = blanks
+        self.lives = lives
+        self.used = used
+        
+    def get_random_word(self):
     
-    words = [
-        "python", "variable", "function", "iterator", "notebook",
-        "pipeline", "dataset", "computer", "research", "analytics"
-    ]
-    return random.choice(words)
+        words = [ "python", "variable", "function", "iterator", "notebook",
+        "pipeline", "dataset", "computer", "research", "analytics"]
+        return random.choice(words)
 
-def make_blanks(word):
+    def make_blanks(word):
     
-    return ["_" for _ in word]
+        return ["_" for _ in word]
 
-def prompt_for_letter(used_letters):
+    def prompt_for_letter(used_letters):
 
-    while True:
-        guess = input("Guess a letter: ").strip().lower()
-        if len(guess) != 1 or guess not in string.ascii_lowercase:
-            print(" → Please enter a single A-Z letter.")
-            continue
-        if guess in used_letters:
-            print(" → You already tried that letter.")
-            continue
+        while True:
+            guess = input("Guess a letter: ").strip().lower()
+            if len(guess) != 1 or guess not in string.ascii_lowercase:
+                print(" → Please enter a single A-Z letter.")
+                continue
+            if guess in used_letters:
+                print(" → You already tried that letter.")
+                continue
         return guess
 
-def reveal_letters(word, blanks, letter):
+    def reveal_letters(word, blanks, letter):
 
-    found_any = False
-    for i, ch in enumerate(word):
-        if ch == letter and blanks[i] == "_":
-            blanks[i] = letter
-            found_any = True
-    return found_any
+        found_any = False
+        for i, ch in enumerate(word):
+            if ch == letter and blanks[i] == "_":
+                blanks[i] = letter
+                found_any = True
+        return found_any
 
-def all_blanks_filled(blanks):
+    def all_blanks_filled(blanks):
    
-    return "_" not in blanks
+        return "_" not in blanks
 
+#Main Function
 def play_game(max_lives=6):
     
     secret = get_random_word()
