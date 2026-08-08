@@ -11,13 +11,13 @@ class Word_Game:
         
     def get_random_word(self):
     
-        words = [ "python", "variable", "function", "iterator", "notebook",
+        self.words = [ "python", "variable", "function", "iterator", "notebook",
         "pipeline", "dataset", "computer", "research", "analytics"]
         return random.choice(words)
 
-    def make_blanks(word):
+    def make_blanks(self,word):
     
-        return ["_" for _ in word]
+        return ["_" for _ in self.word]
 
     def prompt_for_letter(used_letters):
 
