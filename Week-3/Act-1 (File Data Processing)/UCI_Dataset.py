@@ -1,5 +1,6 @@
 # Pandas can make the code easier...
 import pandas as pd
+#pathlib can help in locating the file in much easier and protected way...
 from pathlib import Path
 
 file_path = Path(__file__).resolve().parent / "iris.data"
