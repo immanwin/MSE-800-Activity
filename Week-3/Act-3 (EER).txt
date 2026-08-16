@@ -1,0 +1,10 @@
+Database
+
+Scenario:
+It's a database that describes the relationship between the entities of a college. The entities are Student, Lecturer Subjects, Enrollment and Lecture. Each entity has multiple attributes. "Enrolls" and "Lectures" are the relationships between the entities.
+
+Adding Attributes:
+
+
+Type of Relationships between Entities:
+Based on the symbols used to represent the relationships between the Entities, we can conclude it's "Partial to One" relationship. 
