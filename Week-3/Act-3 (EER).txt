@@ -1,10 +1,20 @@
-Database
-
-Scenario:
-It's a database that describes the relationship between the entities of a college. The entities are Student, Lecturer Subjects, Enrollment and Lecture. Each entity has multiple attributes. "Enrolls" and "Lectures" are the relationships between the entities.
-
-Adding Attributes:
+WEEK - 3 (ACTIVITY - 3)
+^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Type of Relationships between Entities:
-Based on the symbols used to represent the relationships between the Entities, we can conclude it's "Partial to One" relationship. 
+Description:
+````````````
+            The image attached within the folder represents an Entity-Relationship (ER) model. Based on the model, we can assume that it represents a database associated with a university. The elements shown in rectangular shapes represent the entities, while the elements shown in elliptical shapes represent the attributes of those entities. The relationships between the entities are represented using diamonds (or diamond-shaped boxes). The symbols connecting the entities to the relationships indicate their cardinality. In this model, the relationships appear to indicate that an entity can participate in zero or one instance of the relationship.
+
+
+
+1) Adding Attributes:
+   ^^^^^^^^^^^^^^^^^
+Entities             New Attributes
+````````             ``````````````
+# Subjects     --->  Course Credits
+# Lecture      --->  Resources
+# Enrollement  --->  Fee Structure
+
+
+2) Type of Relationship ---> "Zero or One"
