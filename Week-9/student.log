@@ -1,0 +1,14 @@
+2026-09-27 12:46:12,331 - INFO - Starting student processing
+2026-09-27 12:46:12,331 - INFO - Student: Ali
+2026-09-27 12:46:12,331 - INFO - Average calculated: 71.67
+2026-09-27 12:46:12,331 - INFO - Processing completed
+2026-09-27 12:47:13,793 - INFO - Starting student processing
+2026-09-27 12:47:13,793 - INFO - Student: Ali
+2026-09-27 12:47:13,794 - INFO - Average calculated: 6.67
+2026-09-27 12:47:13,794 - WARNING - Student average is below 50
+2026-09-27 12:47:13,794 - INFO - Processing completed
+2026-09-27 12:49:00,288 - INFO - Arambam!
+2026-09-27 12:49:00,288 - INFO - Student: Ali
+2026-09-27 12:49:00,288 - INFO - Average calculated: 6.67
+2026-09-27 12:49:00,288 - WARNING - Student average is below 50
+2026-09-27 12:49:00,288 - INFO - Mudivu!
