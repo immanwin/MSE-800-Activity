@@ -1,0 +1,7 @@
+<html lang="en" style="background:blue">
+
+<style>
+    html { background: ; }   /* whole page background */
+    h1   { color: pink; background-color: black;
+    }         /* all h1 elements */
+</style>
